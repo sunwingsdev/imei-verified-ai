@@ -19,7 +19,7 @@ const Footer = () => {
             <h5 className="text-[#1e1e1e] text-[16px] lg:text-[18px] font-semibold">
               Practice limited to Immigration and Nationality Law.
             </h5>
-            <p className="text-[16px] lg:text-[18px] mb-1">
+            <p className="text-[16px] lg:text-[18px] mb-1 ">
               Heitz Immigration Law is located in downtown Lake Worth Beach, FL.
             </p>
             <h5 className="text-[#1e1e1e] text-[16px] lg:text-[18px] font-semibold mb-3">
