@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-5 py-10">
           <div className="">
             <h4 className="text-[#204498] text-[21px] font-bold mb-2 lg:mb-5">
-              Heitz Immigration Law
+              IMEI Verified AI
             </h4>
             <h5 className="text-[#1e1e1e] text-[16px] lg:text-[18px] font-semibold">
               Practice limited to Immigration and Nationality Law.
