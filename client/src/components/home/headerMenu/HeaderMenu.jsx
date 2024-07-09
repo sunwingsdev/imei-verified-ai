@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
+import { AiOutlineMenuFold } from "react-icons/ai";
+import { useState } from "react";
 
 const HeaderMenu = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  console.log(isMobileMenuOpen);
+
+  // const handleMobileMenuOpen=()=>{
+  //   setIsMobileMenuOpen(!isMobileMenuOpen)
+  // }
+
   return (
     <div className="">
       <div className="bg-[#e2126f]">
@@ -13,11 +23,14 @@ const HeaderMenu = () => {
               />
             </div>
           </Link>
-          <div className="flex items-center gap-8 text-base text-white font-medium">
+          <div onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)} className="flex items-center justify-center gap-1 md:hidden text-white">
+            <p className="text-sm">মেন্যু</p> <AiOutlineMenuFold />
+          </div>
+          <div className="hidden md:flex items-center gap-8 text-base text-white font-medium">
             <Link to="">হোম</Link>
             <Link to="">হেল্প সেন্টার</Link>
             <Link to="">সার্ভিস</Link>
-            <Link to="">এবাউট</Link>
+            <Link to="">আমাদের সম্পর্কে</Link>
             <Link to="">রিভিউ</Link>
             <Link to="">ব্লগ</Link>
             <Link to="">
