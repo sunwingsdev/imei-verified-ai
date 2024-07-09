@@ -41,35 +41,43 @@ const Footer = () => {
           </div>
           <div className="">
             <h4 className="text-xl font-bold mb-3">সার্ভিস</h4>
-            <div className="flex flex-col">
-              <Link className="mb-3 hover:text-[#204498]">যোগাযোগ</Link>
-              <Link className="mb-3 hover:text-[#204498]">
-                কাস্টমার সাপোর্ট
+            <ul className="flex flex-col gap-3">
+              <Link>
+                <li className="inline-block hover:text-[#d6d6d6]">যোগাযোগ</li>
               </Link>
-              <Link className="mb-3 hover:text-[#204498]">কমপ্লেইন্ট সেল</Link>
-            </div>
+              <Link>
+                <li className="inline-block hover:text-[#d6d6d6]">
+                  কমপ্লেইন্ট সেল
+                </li>
+              </Link>
+              <Link className="inline-block">
+                <li className="inline-block hover:text-[#d6d6d6]">
+                  আমাদের সম্পর্কে
+                </li>
+              </Link>
+            </ul>
           </div>
           <div className="">
             <h4 className="text-xl font-bold mb-3">ব্যবসা</h4>
             <div className="flex flex-col">
-              <Link className="mb-3 hover:text-[#204498]">সাপ্লায়ার হোন</Link>
-              <Link className="mb-3 hover:text-[#204498]">মার্চেন্ট হোন</Link>
-              <Link className="mb-3 hover:text-[#204498]">ডিজিটাল বেতন</Link>
+              <Link className="mb-3 hover:text-[#d6d6d6]">সাপ্লায়ার হোন</Link>
+              <Link className="mb-3 hover:text-[#d6d6d6]">মার্চেন্ট হোন</Link>
+              <Link className="mb-3 hover:text-[#d6d6d6]">ডিজিটাল বেতন</Link>
             </div>
           </div>
           <div className="">
             <h4 className="text-xl font-bold mb-3">অন্যান্য</h4>
             <div className="flex flex-col">
-              <Link className="mb-3 hover:text-[#204498]">শর্তাবলি</Link>
-              <Link className="mb-3 hover:text-[#204498]">সাধারণ জিজ্ঞাসা</Link>
-              <Link className="mb-3 hover:text-[#204498]">
+              <Link className="mb-3 hover:text-[#d6d6d6]">শর্তাবলি</Link>
+              <Link className="mb-3 hover:text-[#d6d6d6]">সাধারণ জিজ্ঞাসা</Link>
+              <Link className="mb-3 hover:text-[#d6d6d6]">
                 নিরাপত্তা পরামর্শ
               </Link>
             </div>
           </div>
         </div>
         {/* Footer Copy Right */}
-        <div className="border-t py-[20px]">
+        <div className="border-t py-6">
           <div className="flex items-center flex-col sm:flex-row justify-start sm:justify-between gap-5">
             <p className="text-white text-[15px]">© 2024 Sb Max It Park.</p>
             <div className="flex gap-5 text-black">
