@@ -1,6 +1,6 @@
 const Button = ({ icon: Icon, text }) => {
   return (
-    <div className="flex items-center justify-center gap-4 font-medium text-[#e2136e] text-[1.5625rem] leading-5 px-[3.25rem] py-[.5rem] rounded-3xl border border-[#e2136e]">
+    <div className="flex w-fit items-center justify-center gap-4 font-medium shadow-md text-[#e2136e] hover:text-white bg-white hover:bg-[#e2136e] text-[1rem] md:text-[1.5625rem] px-[3rem] py-[.5rem] rounded-[2rem] border border-[#e2136e]">
       {Icon && <Icon />}
       <p className="">{text}</p>
     </div>
