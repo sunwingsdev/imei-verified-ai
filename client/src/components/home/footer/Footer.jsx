@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-5 py-10">
           <div className="">
-            <h4 className="text-xl font-bold mb-3">IMEI ভেরিফাই আপ</h4>
+            <h4 className="text-xl font-bold mb-3">IMEI ভেরিফাই অ্যাপ</h4>
             <p className="text-base mb-1 ">
               IMEI হল একটি অনন্য 15-সংখ্যার কোড যা সিম কার্ড ইনপুট দিয়ে
               ডিভাইসটিকে সুনির্দিষ্টভাবে সনাক্ত করে। প্রথম 14টি সংখ্যা GSM
