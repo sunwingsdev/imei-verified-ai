@@ -80,19 +80,24 @@ const Help = () => {
                 <HelpServiceCard key={id} image={image} title={title} />
               ))}
           </div>
-          <div className="flex flex-row items-center justify-center gap-4">
-            <div className="text-right">
-              <h2 className="font-bold">যোগাযোগ করুন</h2>
-              <p>ই-মেইল: support@bkash.com</p>
+          <div className="flex flex-row items-center justify-center gap-4 py-20">
+            <div className="text-right text-[1.25rem]">
+              <h2 className="font-bold text-[1.5625rem]">যোগাযোগ করুন</h2>
+              <p className="">
+                ই-মেইল:{" "}
+                <span className="text-[#e2136e]">support@bkash.com</span>
+              </p>
               <p>ফ্যাক্স: +88-02-9894916</p>
             </div>
-            <div className="h-36 border-l-2 border-black"></div>
-            <div>
-              <h2>কর্পোরেট ঠিকানা</h2>
+            <div className="h-56 border-l-2 border-black"></div>
+            <div className="text-[1.25rem] space-y-1">
+              <h2 className="text-[1.5625rem] font-bold">কর্পোরেট ঠিকানা</h2>
               <p>স্বাধীনতা টাওয়ার, ১,</p>
               <p>বীরশ্রেষ্ঠ শহীদ জাহাঙ্গীর গেট,</p>
               <p>ঢাকা সেনানিবাস, ঢাকা ১২০৬</p>
-              <h2>বাণিজ্যিক ঠিকানা</h2>
+              <h2 className="text-[1.5625rem] font-bold mt-3">
+                বাণিজ্যিক ঠিকানা
+              </h2>
               <p>এসকেএস টাওয়ার, ৭ ভিআইপি রোড, মহাখালী,</p>
               <p>ঢাকা ১২০৬</p>
             </div>
