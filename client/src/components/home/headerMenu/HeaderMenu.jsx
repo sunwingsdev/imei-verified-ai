@@ -27,9 +27,10 @@ const HeaderMenu = () => {
             <p className="text-sm">মেন্যু</p> <AiOutlineMenuFold />
           </div>
           <div className="hidden md:flex items-center gap-8 text-base text-white font-medium">
-            <Link to="">হোম</Link>
-            <Link to="">হেল্প সেন্টার</Link>
-            <Link to="">সার্ভিস</Link>
+            <Link to="/">হোম</Link>
+            <Link to="/help">হেল্প সেন্টার</Link>
+            <Link to="/service">সার্ভিস</Link>
+            <Link to="/career">ক্যারিয়ার</Link>
             <Link to="">আমাদের সম্পর্কে</Link>
             <Link to="">রিভিউ</Link>
             <Link to="">ব্লগ</Link>
