@@ -1,6 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { AiOutlineMenuFold } from "react-icons/ai";
+import { useState } from "react";
 
 const HeaderMenu = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+ 
+  // const handleMobileMenuOpen=()=>{
+  //   setIsMobileMenuOpen(!isMobileMenuOpen)
+  // }
+
   return (
     <div className="">
       <div className="bg-[#e2126f]">
@@ -13,18 +22,79 @@ const HeaderMenu = () => {
               />
             </div>
           </Link>
-          <div className="flex items-center gap-8 text-base text-white font-medium">
-            <Link to="">হোম</Link>
-            <Link to="">হেল্প সেন্টার</Link>
-            <Link to="">সার্ভিস</Link>
-            <Link to="">এবাউট</Link>
-            <Link to="">রিভিউ</Link>
-            <Link to="">ব্লগ</Link>
-            <Link to="">
+          <div
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="flex items-center justify-center gap-1 md:hidden text-white"
+          >
+            <p className="text-sm">মেন্যু</p> <AiOutlineMenuFold />
+          </div>
+          <div className="hidden md:flex items-center gap-2 md:gap-6 text-sm md:text-base text-white font-medium">
+            <NavLink
+              className={({ isActive }) =>
+                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
+              }
+              to="/"
+            >
+              হোম
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
+              }
+              to="/help"
+            >
+              হেল্প সেন্টার
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
+              }
+              to="/service"
+            >
+              সার্ভিস
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
+              }
+              to="/career"
+            >
+              ক্যারিয়ার
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
+              }
+              to="/about"
+            >
+              আমাদের সম্পর্কে
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
+              }
+              to="review"
+            >
+              রিভিউ
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
+              }
+              to="/blog"
+            >
+              ব্লগ
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
+              }
+              to="/app"
+            >
               <button className="border rounded-full py-1 px-6 hover:bg-white hover:text-[#e2126f] font-medium">
                 IMEI ভেরিফাই আপ
               </button>
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>

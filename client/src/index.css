@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "CustomFont";
+  src: url("./fonts/SolaimanLipi_Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("./fonts/SolaimanLipi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "CustomFont", sans-serif;
+}
+
 .container {
   padding: 0 26px;
 }
