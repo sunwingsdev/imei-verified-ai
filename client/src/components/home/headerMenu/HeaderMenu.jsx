@@ -45,14 +45,14 @@ const HeaderMenu = () => {
             >
               হেল্প সেন্টার
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className={({ isActive }) =>
                 `px-2 py-1 ${isActive && "font-bold border-b-2"}`
               }
               to="/service"
             >
               সার্ভিস
-            </NavLink>
+            </NavLink> */}
             <NavLink
               className={({ isActive }) =>
                 `px-2 py-1 ${isActive && "font-bold border-b-2"}`
@@ -65,23 +65,23 @@ const HeaderMenu = () => {
               className={({ isActive }) =>
                 `px-2 py-1 ${isActive && "font-bold border-b-2"}`
               }
-              to="/about"
+              to="/about-us"
             >
               আমাদের সম্পর্কে
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className={({ isActive }) =>
                 `px-2 py-1 ${isActive && "font-bold border-b-2"}`
               }
               to="review"
             >
               রিভিউ
-            </NavLink>
+            </NavLink> */}
             <NavLink
               className={({ isActive }) =>
                 `px-2 py-1 ${isActive && "font-bold border-b-2"}`
               }
-              to="/blog"
+              to="/blogs"
             >
               ব্লগ
             </NavLink>
