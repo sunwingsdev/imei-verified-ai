@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "../../../components/shared/Button";
+import JobCard from "../../../components/home/jobCard/JobCard";
 
 const Career = () => {
   return (
@@ -70,6 +71,16 @@ const Career = () => {
             src="https://www.bkash.com/uploaded_contents/contents/2_1677696116707.webp"
             alt=""
           />
+        </div>
+      </div>
+      <div className="bg-slate-100 py-20">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+          </div>
         </div>
       </div>
     </div>

@@ -42,13 +42,8 @@ const Footer = () => {
           <div className="">
             <h4 className="text-xl font-bold mb-3">সার্ভিস</h4>
             <ul className="flex flex-col gap-3">
-              <Link>
+              <Link to="contact-us">
                 <li className="inline-block hover:text-[#d6d6d6]">যোগাযোগ</li>
-              </Link>
-              <Link>
-                <li className="inline-block hover:text-[#d6d6d6]">
-                  কমপ্লেইন্ট সেল
-                </li>
               </Link>
               <Link className="inline-block">
                 <li className="inline-block hover:text-[#d6d6d6]">
@@ -60,7 +55,6 @@ const Footer = () => {
           <div className="">
             <h4 className="text-xl font-bold mb-3">ব্যবসা</h4>
             <div className="flex flex-col">
-              <Link className="mb-3 hover:text-[#d6d6d6]">সাপ্লায়ার হোন</Link>
               <Link className="mb-3 hover:text-[#d6d6d6]">মার্চেন্ট হোন</Link>
               <Link className="mb-3 hover:text-[#d6d6d6]">ডিজিটাল বেতন</Link>
             </div>
@@ -68,10 +62,8 @@ const Footer = () => {
           <div className="">
             <h4 className="text-xl font-bold mb-3">অন্যান্য</h4>
             <div className="flex flex-col">
-              <Link className="mb-3 hover:text-[#d6d6d6]">শর্তাবলি</Link>
-              <Link className="mb-3 hover:text-[#d6d6d6]">সাধারণ জিজ্ঞাসা</Link>
-              <Link className="mb-3 hover:text-[#d6d6d6]">
-                নিরাপত্তা পরামর্শ
+              <Link to="conditions" className="mb-3 hover:text-[#d6d6d6]">
+                শর্তাবলি
               </Link>
             </div>
           </div>
