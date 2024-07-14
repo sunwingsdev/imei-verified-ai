@@ -3,6 +3,8 @@ import MainLayout from "../layout/MainLayout";
 import Help from "../pages/Home/Help/Help";
 import Home from "../pages/Home/home/Home";
 import Career from "../pages/Home/career/Career";
+import AboutUs from "../pages/Home/AboutUs/AboutUs";
+import Blogs from "../pages/Home/blogs/Blogs";
 import ContactUs from "../pages/Home/contactUs/ContactUs";
 import Conditions from "../pages/Home/conditions/Conditions";
 import JobDetails from "../pages/Home/jobDetails/JobDetails";
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "/help",
         element: <Help />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />,
       },
       {
         path: "/career",
