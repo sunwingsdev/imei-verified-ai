@@ -22,7 +22,7 @@ const JobCard = () => {
       <p className="text-base lg:text-lg">TK. 13,000</p>
       <p className="text-base lg:text-lg">12/08/2024</p>
       <p className="text-base lg:text-lg pb-6">শেওড়াপাড়া</p>
-      <Link>
+      <Link to="/job-details">
         <div className="bg-slate-700 hover:bg-[#e2126f] transition-all duration-300 text-white border rounded-2xl py-2 w-full text-center text-base md:text-xl lg:text-2xl font-bold">
           বিস্তারিত দেখুন
         </div>
