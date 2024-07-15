@@ -1,0 +1,49 @@
+.slider-container {
+    position: relative;
+  }
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust gap between dots as needed */
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+  }
+  
+  .custom-dot {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dot-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .slick-dots li.slick-active .dot-button {
+    background-color: #e2126f;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+  }
+  
+  .controls-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust gap between play/pause buttons as needed */
+    margin-top: 10px;
+    text-align: center;
+  }
+  

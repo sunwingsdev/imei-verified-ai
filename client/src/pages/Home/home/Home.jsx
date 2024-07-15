@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import FeatureCard from "../../../components/shared/FeatureCard";
+import SliderCarousel from "../../../components/home/Slider/SliderCarousel";
 
 const Home = () => {
   return (
     <div className="">
+      <SliderCarousel />
       <div className="container mx-auto my-14">
         <h2 className="text-center text-2xl md:text-4xl font-bold">
           সব আর্থিক সল্যুশন এক প্ল্যাটফর্মে
