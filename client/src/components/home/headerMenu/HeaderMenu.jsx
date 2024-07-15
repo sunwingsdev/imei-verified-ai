@@ -5,10 +5,13 @@ import { useState } from "react";
 const HeaderMenu = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
- 
-  // const handleMobileMenuOpen=()=>{
-  //   setIsMobileMenuOpen(!isMobileMenuOpen)
-  // }
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleMenuItemClick = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <div className="">
@@ -18,12 +21,12 @@ const HeaderMenu = () => {
             <div className="w-24">
               <img
                 src="https://images.wondershare.com/drfone/article/2023/05/imei-info.jpg"
-                alt=""
+                alt="Logo"
               />
             </div>
           </Link>
           <div
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={handleMobileMenuToggle}
             className="flex items-center justify-center gap-1 md:hidden text-white"
           >
             <p className="text-sm">মেন্যু</p> <AiOutlineMenuFold />
@@ -49,14 +52,6 @@ const HeaderMenu = () => {
               className={({ isActive }) =>
                 `px-2 py-1 ${isActive && "font-bold border-b-2"}`
               }
-              to="/service"
-            >
-              সার্ভিস
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
-              }
               to="/career"
             >
               ক্যারিয়ার
@@ -65,7 +60,7 @@ const HeaderMenu = () => {
               className={({ isActive }) =>
                 `px-2 py-1 ${isActive && "font-bold border-b-2"}`
               }
-              to="/about"
+              to="/about-us"
             >
               আমাদের সম্পর্কে
             </NavLink>
@@ -73,15 +68,7 @@ const HeaderMenu = () => {
               className={({ isActive }) =>
                 `px-2 py-1 ${isActive && "font-bold border-b-2"}`
               }
-              to="review"
-            >
-              রিভিউ
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                `px-2 py-1 ${isActive && "font-bold border-b-2"}`
-              }
-              to="/blog"
+              to="/blogs"
             >
               ব্লগ
             </NavLink>
@@ -98,12 +85,66 @@ const HeaderMenu = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto">
-        <img
-          src="https://www.bkash.com/uploaded_contents/banners/desktop/website-1920x500_1717679913441.webp"
-          alt=""
-        />
-      </div>
+      {isMobileMenuOpen && (
+        <div className="bg-[#e2126f] text-white py-2 md:hidden">
+          <NavLink
+            onClick={handleMenuItemClick}
+            className={({ isActive }) =>
+              `block px-4 py-2 ${isActive && "font-bold border-b-2"}`
+            }
+            to="/"
+          >
+            হোম
+          </NavLink>
+          <NavLink
+            onClick={handleMenuItemClick}
+            className={({ isActive }) =>
+              `block px-4 py-2 ${isActive && "font-bold border-b-2"}`
+            }
+            to="/help"
+          >
+            হেল্প সেন্টার
+          </NavLink>
+          <NavLink
+            onClick={handleMenuItemClick}
+            className={({ isActive }) =>
+              `block px-4 py-2 ${isActive && "font-bold border-b-2"}`
+            }
+            to="/career"
+          >
+            ক্যারিয়ার
+          </NavLink>
+          <NavLink
+            onClick={handleMenuItemClick}
+            className={({ isActive }) =>
+              `block px-4 py-2 ${isActive && "font-bold border-b-2"}`
+            }
+            to="/about-us"
+          >
+            আমাদের সম্পর্কে
+          </NavLink>
+          <NavLink
+            onClick={handleMenuItemClick}
+            className={({ isActive }) =>
+              `block px-4 py-2 ${isActive && "font-bold border-b-2"}`
+            }
+            to="/blogs"
+          >
+            ব্লগ
+          </NavLink>
+          <NavLink
+            onClick={handleMenuItemClick}
+            className={({ isActive }) =>
+              `block px-4 py-2 ${isActive && "font-bold border-b-2"}`
+            }
+            to="/app"
+          >
+            <button className="w-full border rounded-full py-1 px-6 hover:bg-white hover:text-[#e2126f] font-medium">
+              IMEI ভেরিফাই আপ
+            </button>
+          </NavLink>
+        </div>
+      )}
     </div>
   );
 };
