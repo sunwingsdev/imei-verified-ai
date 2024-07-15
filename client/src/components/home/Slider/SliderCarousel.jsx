@@ -38,7 +38,7 @@ const SliderCarousel = () => {
   };
 
   return (
-    <div className="slider-container">
+    <div className="slider-container container mx-auto">
       <Slider ref={(slider) => (sliderRef = slider)} {...settings}>
         <div className="">
           <img
@@ -64,7 +64,7 @@ const SliderCarousel = () => {
         {isPlay ? (
           <FaPause className="button text-3xl mt-6" onClick={pause} />
         ) : (
-          <FaPlay className="button text-2xl mt-6" onClick={play} />
+          <FaPlay className="button text-3xl mt-6" onClick={play} />
         )}
       </div>
     </div>
@@ -72,3 +72,4 @@ const SliderCarousel = () => {
 };
 
 export default SliderCarousel;
+ 
