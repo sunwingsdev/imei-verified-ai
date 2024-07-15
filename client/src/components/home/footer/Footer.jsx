@@ -21,7 +21,10 @@ const Footer = () => {
             </p>
             <h4 className="text-xl font-bold mt-5 mb-2">অ্যাপ ডাউনলোড করুন</h4>
             <div className="flex justify-centerc items-center">
-              <Link>
+              <Link
+                to="https://play.google.com/store/apps/details?id=com.ahsan.imeverifiedai&hl=en"
+                target="_blank"
+              >
                 <div className="w-36">
                   <img
                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
@@ -72,20 +75,20 @@ const Footer = () => {
         <div className="border-t py-6">
           <div className="flex items-center flex-col sm:flex-row justify-start sm:justify-between gap-5">
             <p className="text-white text-[15px]">© 2024 Sb Max It Park.</p>
-            <div className="flex gap-5 text-black">
-              <Link className="border rounded-full bg-white hover:bg-blue-700 hover:text-white hover:border-blue-700 p-1">
+            <div className="flex gap-3 text-black">
+              <Link className="border rounded-full bg-white hover:bg-blue-700 hover:text-white hover:border-blue-700 p-2">
                 <FaFacebookF />
               </Link>
-              <Link className="border rounded-full bg-white hover:bg-red-600 hover:text-white hover:border-red-600 p-1">
+              <Link className="border rounded-full bg-white hover:bg-red-600 hover:text-white hover:border-red-600 p-2">
                 <FaYoutube />
               </Link>
-              <Link className="border rounded-full bg-white hover:bg-red-600 hover:text-white hover:border-red-600 p-1">
+              <Link className="border rounded-full bg-white hover:bg-red-600 hover:text-white hover:border-red-600 p-2">
                 <FaInstagram />
               </Link>
-              <Link className="border rounded-full bg-white hover:bg-blue-600 hover:text-white hover:border-blue-600 p-1">
+              <Link className="border rounded-full bg-white hover:bg-blue-600 hover:text-white hover:border-blue-600 p-2">
                 <FaLinkedinIn />
               </Link>
-              <Link className="border rounded-full bg-white hover:bg-black hover:text-white hover:border-black p-1">
+              <Link className="border rounded-full bg-white hover:bg-black hover:text-white hover:border-black p-2">
                 <FaXTwitter />
               </Link>
             </div>

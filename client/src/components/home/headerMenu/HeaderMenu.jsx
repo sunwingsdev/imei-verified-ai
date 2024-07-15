@@ -5,7 +5,6 @@ import { useState } from "react";
 const HeaderMenu = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
- 
   // const handleMobileMenuOpen=()=>{
   //   setIsMobileMenuOpen(!isMobileMenuOpen)
   // }
@@ -89,9 +88,10 @@ const HeaderMenu = () => {
               className={({ isActive }) =>
                 `px-2 py-1 ${isActive && "font-bold border-b-2"}`
               }
-              to="/app"
+              to="https://play.google.com/store/apps/details?id=com.ahsan.imeverifiedai&hl=en"
+              target="_blank"
             >
-              <button className="border rounded-full py-1 px-6 hover:bg-white hover:text-[#e2126f] font-medium">
+              <button className="border rounded-full py-1 px-6 hover:bg-white hover:text-[#e2126f] duration-300 transition-all font-medium">
                 IMEI ভেরিফাই আপ
               </button>
             </NavLink>

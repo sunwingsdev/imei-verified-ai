@@ -31,7 +31,10 @@ const Home = () => {
               রাখুন!
             </p>
             <div className="flex items-center justify-center md:justify-start pt-3">
-              <Link>
+              <Link
+                to="https://play.google.com/store/apps/details?id=com.ahsan.imeverifiedai&hl=en"
+                target="_blank"
+              >
                 <div className="w-36 md:w-48">
                   <img
                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
